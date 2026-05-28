@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ANIMATED AI ORCHESTRATION BANNER -->
-<img src="https://raw.githubusercontent.com/nuvazic-pixel/nuvazic-pixel/main/banner.svg" width="100%" alt="AI Orchestration Banner"/>
+<img src="https://raw.githubusercontent.com/nuvazic-pixel/nuvazic-pixel/main/banner-1.svg"
 
 <!-- Typing animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&multiline=true&width=700&height=80&lines=AI+Orchestration+Engineer+%F0%9F%A4%96;Building+Intelligent+Systems+%E2%9A%A1;Particle+Physics+%C3%97+Machine+Learning+%F0%9F%94%AC)](https://git.io/typing-svg)
