@@ -1,14 +1,11 @@
 <div align="center">
 
-<!-- ANIMATED AI ORCHESTRATION BANNER -->
-<img src="https://raw.githubusercontent.com/nuvazic-pixel/nuvazic-pixel/main/banner-1.svg"
+![header](https://capsule-render.vercel.app/api?type=venom&height=280&text=AI%20ORCHESTRATION&fontSize=52&color=0:020510,50:0a0520,100:020510&fontColor=00e5ff&stroke=00e5ff&strokeWidth=2&desc=nuvazic-pixel%20%E2%97%88%20LLM%20Agents%20%C2%B7%20RAG%20Pipelines%20%C2%B7%20Autonomous%20Systems&descSize=15&descAlignY=75&animation=twinkling&fontAlignY=45)
 
-<!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&multiline=true&width=700&height=80&lines=AI+Orchestration+Engineer+%F0%9F%A4%96;Building+Intelligent+Systems+%E2%9A%A1;Particle+Physics+%C3%97+Machine+Learning+%F0%9F%94%AC)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&multiline=true&width=700&height=70&lines=AI+Orchestration+Engineer+%F0%9F%A4%96;Building+Intelligent+Systems+%E2%9A%A1;Particle+Physics+%C3%97+Machine+Learning+%F0%9F%94%AC)](https://git.io/typing-svg)
 
 <br/>
 
-<!-- Status badges -->
 ![Status](https://img.shields.io/badge/STATUS-ONLINE-00e5ff?style=flat-square&labelColor=020510)
 ![Focus](https://img.shields.io/badge/FOCUS-AI%20ORCHESTRATION-ea80fc?style=flat-square&labelColor=020510)
 ![Mode](https://img.shields.io/badge/MODE-BUILDING-69ff47?style=flat-square&labelColor=020510)
@@ -85,7 +82,7 @@ profile = {
 [![QED Card](https://github-readme-stats.vercel.app/api/pin/?username=nuvazic-pixel&repo=hybrid-qed-collision&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&icon_color=ea80fc)](https://github.com/nuvazic-pixel/hybrid-qed-collision)
 
 ```
-e⁺ + e⁻  →  γγ  |  μ⁺μ⁻  |  hadrons  |  ...
+e⁺ + e⁻  →  γγ  |  μ⁺μ⁻  |  hadrons
 Semi-Realistic QED Particle Collision Simulator
 React · Three.js · Canvas2D · Live Physics Engine
 ```
@@ -98,8 +95,8 @@ React · Three.js · Canvas2D · Live Physics Engine
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=nuvazic-pixel&show_icons=true&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&icon_color=69ff47&hide_border=false" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nuvazic-pixel&layout=compact&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&hide_border=false" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=nuvazic-pixel&show_icons=true&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&icon_color=69ff47" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nuvazic-pixel&layout=compact&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5" />
 
 <br/><br/>
 
@@ -123,27 +120,19 @@ React · Three.js · Canvas2D · Live Physics Engine
                        │       │      │
               ┌────────▼─┐ ┌───▼───┐ ┌▼────────┐
               │  PLANNER │ │  RAG  │ │  TOOLS  │
-              │  Agent   │ │Engine │ │ Executor│
+              │  Agent   │ │Engine │ │Executor │
               └────────┬─┘ └───┬───┘ └┬────────┘
                        │       │      │
                     ┌──▼───────▼──────▼──┐
-                    │   VECTOR DB / MEM  │  ← Pinecone / pgvector
+                    │   VECTOR DB / MEM  │
                     └────────────────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │      OUTPUT         │
-                    └─────────────────────┘
 ```
 
 ---
 
 <div align="center">
 
-![Wave](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=80&section=footer&text=&fontSize=0)
-
-```
-◈  nuvazic-pixel  ·  AI Orchestration  ·  Particle Physics  ·  Always Building  ◈
-```
+![footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=0:020510,50:0a0520,100:020510&fontColor=00e5ff&section=footer)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=nuvazic-pixel.nuvazic-pixel&left_color=020510&right_color=00e5ff&left_text=VISITORS)
 
