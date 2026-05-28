@@ -1,0 +1,264 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a0520"/>
+      <stop offset="50%" stop-color="#040d1a"/>
+      <stop offset="100%" stop-color="#020510"/>
+    </radialGradient>
+
+    <!-- Big Bang core glow -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="20%" stop-color="#00e5ff" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#ea80fc" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#020510" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Particle trail glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,180,255,0.06)" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Clip -->
+    <clipPath id="clip"><rect width="900" height="280"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bgGrad)"/>
+  <rect width="900" height="280" fill="url(#grid)"/>
+
+  <!-- ── EXPLOSION RINGS ── -->
+  <!-- Ring 1 -->
+  <circle cx="450" cy="140" r="20" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0">
+    <animate attributeName="r" values="0;180" dur="3s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="stroke-opacity" values="0.8;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="stroke-width" values="3;0.3" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  <!-- Ring 2 -->
+  <circle cx="450" cy="140" r="20" fill="none" stroke="#ea80fc" stroke-width="1.5" stroke-opacity="0">
+    <animate attributeName="r" values="0;220" dur="3s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="stroke-opacity" values="0.6;0" dur="3s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="stroke-width" values="2;0.2" dur="3s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <!-- Ring 3 -->
+  <circle cx="450" cy="140" r="20" fill="none" stroke="#69ff47" stroke-width="1" stroke-opacity="0">
+    <animate attributeName="r" values="0;260" dur="3s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="stroke-opacity" values="0.4;0" dur="3s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+
+  <!-- ── EXPLOSION PARTICLE TRAILS ── -->
+  <!-- Each line: from center outward, fades in then out -->
+
+  <!-- Cyan rays -->
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#00e5ff" stroke-width="1.5" filter="url(#glow)" opacity="0">
+    <animate attributeName="x2" values="450;620" dur="2.5s" repeatCount="indefinite" begin="0.1s"/>
+    <animate attributeName="y2" values="140;60" dur="2.5s" repeatCount="indefinite" begin="0.1s"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="2.5s" repeatCount="indefinite" begin="0.1s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#00e5ff" stroke-width="2" filter="url(#glow)" opacity="0">
+    <animate attributeName="x2" values="450;280" dur="2.8s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="y2" values="140;50" dur="2.8s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite" begin="0.3s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#00e5ff" stroke-width="1" opacity="0">
+    <animate attributeName="x2" values="450;700" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="y2" values="140;180" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#00e5ff" stroke-width="1.5" opacity="0">
+    <animate attributeName="x2" values="450;200" dur="3s" repeatCount="indefinite" begin="1.2s"/>
+    <animate attributeName="y2" values="140;220" dur="3s" repeatCount="indefinite" begin="1.2s"/>
+    <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite" begin="1.2s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#00e5ff" stroke-width="1" opacity="0">
+    <animate attributeName="x2" values="450;750" dur="2.6s" repeatCount="indefinite" begin="0.6s"/>
+    <animate attributeName="y2" values="140;100" dur="2.6s" repeatCount="indefinite" begin="0.6s"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="2.6s" repeatCount="indefinite" begin="0.6s"/>
+  </line>
+
+  <!-- Purple / magenta rays -->
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ea80fc" stroke-width="2" filter="url(#glow)" opacity="0">
+    <animate attributeName="x2" values="450;650" dur="2.4s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="y2" values="140;240" dur="2.4s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" repeatCount="indefinite" begin="0.5s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ea80fc" stroke-width="1.5" opacity="0">
+    <animate attributeName="x2" values="450;150" dur="3.2s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="y2" values="140;80" dur="3.2s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="3.2s" repeatCount="indefinite" begin="1.5s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ea80fc" stroke-width="1" opacity="0">
+    <animate attributeName="x2" values="450;800" dur="2.7s" repeatCount="indefinite" begin="0.9s"/>
+    <animate attributeName="y2" values="140;160" dur="2.7s" repeatCount="indefinite" begin="0.9s"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="2.7s" repeatCount="indefinite" begin="0.9s"/>
+  </line>
+
+  <!-- Green rays -->
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#69ff47" stroke-width="1.5" filter="url(#glow)" opacity="0">
+    <animate attributeName="x2" values="450;580" dur="2.1s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="y2" values="140;30" dur="2.1s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="opacity" values="0;0.8;0" dur="2.1s" repeatCount="indefinite" begin="1.8s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#69ff47" stroke-width="1" opacity="0">
+    <animate attributeName="x2" values="450;120" dur="2.9s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="y2" values="140;260" dur="2.9s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="2.9s" repeatCount="indefinite" begin="0.4s"/>
+  </line>
+
+  <!-- Gold rays -->
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ffd740" stroke-width="2" filter="url(#glow)" opacity="0">
+    <animate attributeName="x2" values="450;450" dur="2.3s" repeatCount="indefinite" begin="0.7s"/>
+    <animate attributeName="y2" values="140;10" dur="2.3s" repeatCount="indefinite" begin="0.7s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="2.3s" repeatCount="indefinite" begin="0.7s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ffd740" stroke-width="1.5" opacity="0">
+    <animate attributeName="x2" values="450;450" dur="2.6s" repeatCount="indefinite" begin="2.1s"/>
+    <animate attributeName="y2" values="140;270" dur="2.6s" repeatCount="indefinite" begin="2.1s"/>
+    <animate attributeName="opacity" values="0;0.8;0" dur="2.6s" repeatCount="indefinite" begin="2.1s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ffd740" stroke-width="1" opacity="0">
+    <animate attributeName="x2" values="450;50" dur="3.1s" repeatCount="indefinite" begin="1.1s"/>
+    <animate attributeName="y2" values="140;140" dur="3.1s" repeatCount="indefinite" begin="1.1s"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="3.1s" repeatCount="indefinite" begin="1.1s"/>
+  </line>
+  <line x1="450" y1="140" x2="450" y2="140" stroke="#ffd740" stroke-width="1.5" opacity="0">
+    <animate attributeName="x2" values="450;850" dur="2.4s" repeatCount="indefinite" begin="1.4s"/>
+    <animate attributeName="y2" values="140;140" dur="2.4s" repeatCount="indefinite" begin="1.4s"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" repeatCount="indefinite" begin="1.4s"/>
+  </line>
+
+  <!-- ── NODE DOTS – orbiting/floating AI nodes ── -->
+  <!-- Node 1 - LLM -->
+  <g filter="url(#glow)">
+    <circle cx="140" cy="80" r="4" fill="#00e5ff" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3;5;3" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="155" y="85" font-family="monospace" font-size="9" fill="#00e5ff" opacity="0.6">LLM AGENT</text>
+  </g>
+  <!-- Node 2 - RAG -->
+  <g filter="url(#glow)">
+    <circle cx="760" cy="65" r="4" fill="#69ff47" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite" begin="0.4s"/>
+      <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <text x="720" y="60" font-family="monospace" font-size="9" fill="#69ff47" opacity="0.6">RAG ENGINE</text>
+  </g>
+  <!-- Node 3 - Vector DB -->
+  <g filter="url(#glow)">
+    <circle cx="110" cy="210" r="3.5" fill="#ea80fc" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.4s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+    <text x="125" y="215" font-family="monospace" font-size="9" fill="#ea80fc" opacity="0.6">VECTOR DB</text>
+  </g>
+  <!-- Node 4 - Orchestrator -->
+  <g filter="url(#glow)">
+    <circle cx="790" cy="200" r="4" fill="#ffd740" opacity="0.5">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.9s" repeatCount="indefinite" begin="1.2s"/>
+      <animate attributeName="r" values="3;5.5;3" dur="1.9s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <text x="740" y="195" font-family="monospace" font-size="9" fill="#ffd740" opacity="0.6">ORCHESTRATOR</text>
+  </g>
+  <!-- Node 5 - Tools -->
+  <g filter="url(#glow)">
+    <circle cx="450" cy="30" r="3" fill="#00e5ff" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3s" repeatCount="indefinite" begin="1.6s"/>
+    </circle>
+    <text x="463" y="35" font-family="monospace" font-size="9" fill="#00e5ff" opacity="0.5">TOOLS</text>
+  </g>
+  <!-- Node 6 - Memory -->
+  <g filter="url(#glow)">
+    <circle cx="450" cy="250" r="3" fill="#ea80fc" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.7s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <text x="463" y="255" font-family="monospace" font-size="9" fill="#ea80fc" opacity="0.5">MEMORY</text>
+  </g>
+
+  <!-- Connection lines between nodes (static, faint) -->
+  <line x1="140" y1="80" x2="450" y2="140" stroke="#00e5ff" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+  <line x1="760" y1="65" x2="450" y2="140" stroke="#69ff47" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+  <line x1="110" y1="210" x2="450" y2="140" stroke="#ea80fc" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+  <line x1="790" y1="200" x2="450" y2="140" stroke="#ffd740" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+  <line x1="450" y1="30" x2="450" y2="140" stroke="#00e5ff" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+  <line x1="450" y1="250" x2="450" y2="140" stroke="#ea80fc" stroke-width="0.4" stroke-opacity="0.12" stroke-dasharray="4,4"/>
+
+  <!-- ── CORE BIG BANG PULSE ── -->
+  <circle cx="450" cy="140" r="18" fill="url(#coreGlow)" filter="url(#strongGlow)">
+    <animate attributeName="r" values="12;22;12" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="140" r="6" fill="white" opacity="0.95" filter="url(#strongGlow)">
+    <animate attributeName="r" values="4;8;4" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ── MAIN TEXT ── -->
+  <!-- Name -->
+  <text x="450" y="118" text-anchor="middle"
+    font-family="'Share Tech Mono', 'Courier New', monospace"
+    font-size="13" letter-spacing="6" fill="#546e7a"
+    filter="url(#textGlow)">
+    ◈  NUVAZIC-PIXEL  ◈
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Big title -->
+  <text x="450" y="158" text-anchor="middle"
+    font-family="'Share Tech Mono', 'Courier New', monospace"
+    font-size="34" font-weight="bold" letter-spacing="4"
+    fill="url(#coreGlow)" filter="url(#textGlow)">
+    <tspan fill="#00e5ff">AI </tspan><tspan fill="#ffffff">ORCHESTRATION</tspan>
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="184" text-anchor="middle"
+    font-family="'Share Tech Mono', 'Courier New', monospace"
+    font-size="12" letter-spacing="3" fill="#ea80fc" opacity="0.75"
+    filter="url(#glow)">
+    LLM AGENTS  ·  RAG PIPELINES  ·  AUTONOMOUS SYSTEMS
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
+  </text>
+
+  <!-- Bottom formula strip -->
+  <text x="450" y="222" text-anchor="middle"
+    font-family="monospace" font-size="9" letter-spacing="2"
+    fill="#37474f">
+    α(q²) · LangChain · Claude · FastAPI · React · Three.js · GeoPandas
+  </text>
+
+  <!-- Scanline overlay effect -->
+  <rect width="900" height="280" fill="none"
+    style="background: repeating-linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0) 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px)"/>
+
+  <!-- Border frame -->
+  <rect x="1" y="1" width="898" height="278" fill="none"
+    stroke="#00e5ff" stroke-width="1" stroke-opacity="0.25"/>
+  <rect x="4" y="4" width="892" height="272" fill="none"
+    stroke="#00e5ff" stroke-width="0.3" stroke-opacity="0.1"/>
+
+  <!-- Corner brackets -->
+  <polyline points="1,30 1,1 30,1" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <polyline points="870,1 899,1 899,30" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <polyline points="1,250 1,279 30,279" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <polyline points="870,279 899,279 899,250" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  </g>
+</svg>
