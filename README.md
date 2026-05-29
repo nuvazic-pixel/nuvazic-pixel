@@ -1,6 +1,6 @@
 <div align="center">
 
-![banner](https://github.com/nuvazic-pixel/nuvazic-pixel/raw/main/banner.gif)
+![banner](https://github.com/nuvazic-pixel/nuvazic-pixel/raw/main/banner3.gif)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&multiline=true&width=700&height=70&lines=AI+Orchestration+Engineer+%F0%9F%A4%96;Building+Intelligent+Systems+%E2%9A%A1;Particle+Physics+%C3%97+Machine+Learning+%F0%9F%94%AC)](https://git.io/typing-svg)
 
