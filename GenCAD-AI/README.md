@@ -82,3 +82,20 @@ Outputs:
 - `reports/benchmark_report.md`
 
 The benchmark runner exits with code `2` if the safety release gate fails.
+
+## Evaluation control layer
+
+The v0.2.2 evaluation protocol is frozen and implemented in code:
+
+- deterministic `FailureClassifier`
+- `BenchmarkComparator`
+- hard/soft `ReleaseGate`
+- immutable experiment fingerprinting
+- case-level regression protection
+
+See [docs/EVALUATION_PLAYBOOK.md](docs/EVALUATION_PLAYBOOK.md).
+
+Each live benchmark run is stored in a dedicated directory such as
+`reports/baseline_001/`, including the benchmark report, classified failures,
+release-gate decision, and experiment fingerprint.
+
