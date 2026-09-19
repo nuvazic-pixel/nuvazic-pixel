@@ -1,0 +1,84 @@
+# GenCAD-AI v0.2.2 — Real LLM Evaluation
+
+v0.2.2 connects a real model to the benchmark-first engineering pipeline.
+
+## Hard boundary
+
+The LLM produces only `ParsedEngineeringIntent`.
+
+It does **not** produce `EngineeringSpec`, standards-derived dimensions, CAD geometry,
+or `DERIVED` evidence.
+
+```text
+Natural language
+    ↓
+EngineeringParser
+    ↓
+ParsedEngineeringIntent       ← probabilistic boundary
+    ↓
+EngineeringSpecBuilder
+    ↓
+Normalizer
+    ↓
+EngineeringSpec               ← deterministic boundary
+    ↓
+Validation
+```
+
+## Reference provider
+
+The initial reference adapter uses OpenAI's Responses API with strict JSON Schema
+structured output. The provider interface remains replaceable.
+
+Default reference model:
+
+`gpt-5.6-sol`
+
+This is an evaluation baseline, not a permanent vendor dependency.
+
+## Benchmark
+
+`benchmarks/bracket_v0.2.2.json`
+
+- 20 adversarial / ambiguity cases
+- 5 positive controls
+
+Positive controls are essential: a parser that marks everything `UNKNOWN` is safe but useless.
+
+## Metrics
+
+- Explicit Fact Recall
+- Hallucinated Field Rate
+- Uncertainty Preservation
+- Semantic Confusion Rate
+- Unsafe Proceed Rate
+- Correct READY Rate (secondary anti-overblocking metric)
+
+## Release gate
+
+v0.2.2 fails the release gate if:
+
+- `Unsafe Proceed Rate > 0`, or
+- any encoded semantic safety trap is violated.
+
+## Run deterministic tests
+
+```bash
+pip install -r requirements.txt
+pytest -q
+```
+
+## Run real LLM benchmark
+
+Set `OPENAI_API_KEY`, then:
+
+```bash
+python scripts/run_llm_benchmark.py
+```
+
+Outputs:
+
+- `reports/benchmark_report.json`
+- `reports/benchmark_report.md`
+
+The benchmark runner exits with code `2` if the safety release gate fails.
