@@ -99,3 +99,24 @@ Each live benchmark run is stored in a dedicated directory such as
 `reports/baseline_001/`, including the benchmark report, classified failures,
 release-gate decision, and experiment fingerprint.
 
+## Run the official live baseline
+
+The frozen first live experiment is executed through GitHub Actions:
+
+1. Add a repository Actions secret named `OPENAI_API_KEY`.
+2. Open **Actions → GenCAD-AI baseline_001 → Run workflow**.
+3. Download the `gencad-ai-baseline-001` artifact after the run.
+
+The workflow fixes:
+
+- provider: `openai`
+- model: `gpt-5.6-sol`
+- prompt: `v1`
+- benchmark: `v0.2.2`
+- run ID: `baseline_001`
+
+It uploads the benchmark report, classified failures, release-gate decision,
+experiment fingerprint, and runner log even when the release gate fails.
+
+Do not edit `prompt_v1` based on individual cases before preserving this baseline.
+
