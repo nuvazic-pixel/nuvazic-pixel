@@ -2,6 +2,9 @@ name: GenCAD-AI baseline_001
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".gencad/baseline_001.trigger"
 
 jobs:
   baseline:
