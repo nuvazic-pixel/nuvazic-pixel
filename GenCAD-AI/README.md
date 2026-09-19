@@ -38,7 +38,7 @@ This is an evaluation baseline, not a permanent vendor dependency.
 
 ## Benchmark
 
-`benchmarks/bracket_v0.2.2.json`
+`benchmarks/cases.py`
 
 - 20 adversarial / ambiguity cases
 - 5 positive controls
