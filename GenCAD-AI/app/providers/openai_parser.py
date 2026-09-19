@@ -1,6 +1,3 @@
-import json
-from typing import Any
-
 from openai import OpenAI
 
 from app.config import LLMConfig
@@ -30,29 +27,19 @@ class OpenAIEngineeringParser(EngineeringParser):
         )
 
     def parse(self, prompt: str) -> ParsedEngineeringIntent:
-        schema = ParsedEngineeringIntent.model_json_schema()
-
-        response = self.client.responses.create(
+        response = self.client.responses.parse(
             model=self.config.model,
             instructions=SYSTEM_PROMPT,
             input=prompt,
             store=False,
-            text={
-                "format": {
-                    "type": "json_schema",
-                    "name": "parsed_engineering_intent",
-                    "description": (
-                        "Explicitly extracted engineering facts and uncertainty. "
-                        "No derived engineering values."
-                    ),
-                    "schema": schema,
-                    "strict": True,
-                }
-            },
+            text_format=ParsedEngineeringIntent,
         )
 
-        if not response.output_text:
-            raise RuntimeError("LLM returned no structured output")
+        parsed = response.output_parsed
+        if parsed is None:
+            raise RuntimeError(
+                "LLM returned no parsed engineering intent. "
+                "Inspect the full response for refusal or incomplete output."
+            )
 
-        payload: dict[str, Any] = json.loads(response.output_text)
-        return ParsedEngineeringIntent.model_validate(payload)
+        return parsed
