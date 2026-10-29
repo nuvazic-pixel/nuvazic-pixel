@@ -1,130 +1,39 @@
-<div align="center">
+# Mark-Sebastian Bistrean-Chirodea
+### Data Analytics · Infrastructure Reporting · Spatial Data
 
-![banner](https://github.com/nuvazic-pixel/nuvazic-pixel/raw/main/banner3.gif)
+Based in Landsberg am Lech, Germany. Seeking a junior Data Analyst, Infrastructure Reporting or Data Quality role around Augsburg/Munich, or a suitable remote/hybrid opportunity.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=800&color=00E5FF&center=true&vCenter=true&multiline=true&width=700&height=70&lines=AI+Orchestration+Engineer+%F0%9F%A4%96;Building+Intelligent+Systems+%E2%9A%A1;Particle+Physics+%C3%97+Machine+Learning+%F0%9F%94%AC)](https://git.io/typing-svg)
+I combine over eight years in telecommunications infrastructure, surveying, construction billing and technical documentation with Data Analytics training at WBS CODING SCHOOL (completed April 2026).
 
-<br/>
+My practical background includes checking field records, reconciling quantities, maintaining GIS/CAD documentation and preparing information for project and billing teams. My analytics portfolio focuses on making data understandable, checking its quality and explaining what a result can—and cannot—support.
 
-![Status](https://img.shields.io/badge/STATUS-ONLINE-00e5ff?style=flat-square&labelColor=020510)
-![Focus](https://img.shields.io/badge/FOCUS-AI%20ORCHESTRATION-ea80fc?style=flat-square&labelColor=020510)
-![Mode](https://img.shields.io/badge/MODE-BUILDING-69ff47?style=flat-square&labelColor=020510)
+## Selected analytics projects
 
-</div>
+| Project | Question and deliverable | Skills demonstrated |
+| --- | --- | --- |
+| [NetGrid — FTTH scenario dashboard](https://github.com/nuvazic-pixel/netgrid-intelligence) | Explore how take rate, build cost and revenue assumptions change an FTTH scenario; Streamlit dashboard with maps and scenario calculations. **Demonstration with simulated FTTH metrics.** | Python, pandas, SQLite, Plotly, infrastructure KPIs |
+| [Magist — Marketplace & delivery analysis](https://github.com/nuvazic-pixel/magist-ecommerce-sql-analysis) | Evaluate a marketplace's product mix and delivery performance for a technology retailer; SQL analysis and Tableau screenshots. | MySQL, joins, aggregation, date calculations, KPI definitions |
+| [GANS — Cities, weather & flights ETL](https://github.com/nuvazic-pixel/Gans_Cities_Final) | Collect city and API data and organize it into six related MySQL tables; documented notebook pipeline. **Requires API access and a local database.** | Python, requests, BeautifulSoup, pandas, SQLAlchemy, relational modelling |
+| [Eniac — Pricing & data quality notebooks](https://github.com/nuvazic-pixel/eniac-ecommerce-analysis) | Explore transaction quality, construct revenue/discount variables and prepare category and seasonal comparisons. **Source-data rerun and completed findings remain in progress.** | pandas, missing/duplicate checks, merges, feature engineering, Matplotlib |
 
----
+For a quick review: start with the business question in each README, open the linked source, then check the data and validation limitations. Course exercises and independent prototypes are labelled in their repositories.
 
-<div align="center">
-╔══════════════════════════════════════════════════════════════╗
-║          ◈  NUVAZIC-PIXEL  ·  AI SYSTEMS ARCHITECT  ◈       ║
-║                                                              ║
-║   LLM Agents  ──►  Orchestration  ──►  Autonomous Systems   ║
-║       ↑                                        ↓            ║
-║   Data Pipelines  ◄──  Vector DBs  ◄──  RAG Engines         ║
-╚══════════════════════════════════════════════════════════════╝
+## Skills and learning
 
-</div>
+**Analytics training:** Python, pandas, SQL, Tableau, data collection with APIs, ETL, BigQuery and Looker Studio. Training also covered A/B testing and data visualisation.
 
----
+**Professional tools:** Excel, SAP documentation workflows, QGIS, AutoCAD/BricsCAD, Trimble GPS and Pix4D.
 
-## ◈ ABOUT
+**Domain experience:** FTTH rollout, surveying, quantity measurement, construction billing, contractor coordination, progress documentation and quality checks.
 
-```python
-profile = {
-    "name"     : "nuvazic-pixel",
-    "focus"    : ["AI Orchestration", "LLM Agents", "Particle Simulation"],
-    "stack"    : ["Python", "React", "Three.js", "LangChain", "FastAPI"],
-    "data"     : ["Pandas", "SQL", "GeoPandas", "QGIS"],
-    "building" : "Hybrid QED Collision Framework × AI Agent Systems",
-    "status"   : "🟢 ONLINE — always shipping",
-}
-```
+My projects practise the full path from a business question to data preparation, metric definitions, visualisation and a clear explanation of limitations. I distinguish training exposure from professional experience.
 
----
+## Additional technical interests
 
-## ◈ TECH STACK
+I also explore AI orchestration and engineering prototypes, including [EAON](https://github.com/nuvazic-pixel/EAON) and [GenCAD AI](https://github.com/nuvazic-pixel/GenCAD-AI). These are independent development projects, separate from the analytics case studies above.
 
-<div align="center">
+## Contact
 
-**AI / ORCHESTRATION**
+[LinkedIn](https://www.linkedin.com/in/bistreanchirodeamark) · [GitHub repositories](https://github.com/nuvazic-pixel?tab=repositories)
 
-![Python](https://img.shields.io/badge/Python-020510?style=for-the-badge&logo=python&logoColor=00e5ff)
-![LangChain](https://img.shields.io/badge/LangChain-020510?style=for-the-badge&logo=chainlink&logoColor=69ff47)
-![OpenAI](https://img.shields.io/badge/OpenAI-020510?style=for-the-badge&logo=openai&logoColor=ea80fc)
-![Claude](https://img.shields.io/badge/Anthropic_Claude-020510?style=for-the-badge&logo=anthropic&logoColor=ffd740)
-![FastAPI](https://img.shields.io/badge/FastAPI-020510?style=for-the-badge&logo=fastapi&logoColor=00e5ff)
-
-**FRONTEND / VISUALIZATION**
-
-![React](https://img.shields.io/badge/React-020510?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Three.js](https://img.shields.io/badge/Three.js-020510?style=for-the-badge&logo=three.js&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-020510?style=for-the-badge&logo=vite&logoColor=646CFF)
-![JavaScript](https://img.shields.io/badge/JavaScript-020510?style=for-the-badge&logo=javascript&logoColor=ffd740)
-
-**DATA / GIS**
-
-![Pandas](https://img.shields.io/badge/Pandas-020510?style=for-the-badge&logo=pandas&logoColor=00e5ff)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-020510?style=for-the-badge&logo=postgresql&logoColor=ea80fc)
-![QGIS](https://img.shields.io/badge/QGIS-020510?style=for-the-badge&logo=qgis&logoColor=69ff47)
-![GeoPandas](https://img.shields.io/badge/GeoPandas-020510?style=for-the-badge&logo=python&logoColor=ffd740)
-
-</div>
-
----
-
-## ◈ FEATURED PROJECT
-
-<div align="center">
-
-[![QED Card](https://github-readme-stats.vercel.app/api/pin/?username=nuvazic-pixel&repo=hybrid-qed-collision&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&icon_color=ea80fc)](https://github.com/nuvazic-pixel/hybrid-qed-collision)
-e⁺ + e⁻  →  γγ  |  μ⁺μ⁻  |  hadrons
-Semi-Realistic QED Particle Collision Simulator
-React · Three.js · Canvas2D · Live Physics Engine
-
-</div>
-
----
-
-## ◈ GITHUB STATS
-
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=nuvazic-pixel&show_icons=true&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5&icon_color=69ff47" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nuvazic-pixel&layout=compact&theme=transparent&border_color=00e5ff&title_color=00e5ff&text_color=b0bec5" />
-
-<br/><br/>
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=nuvazic-pixel&bg_color=020510&color=00e5ff&line=ea80fc&point=69ff47&area=true&hide_border=true)
-
-</div>
-
----
-
-## ◈ AI ORCHESTRATION ARCHITECTURE
-                ┌─────────────────────┐
-                │   USER / TRIGGER    │
-                └──────────┬──────────┘
-                           │
-                ┌──────────▼──────────┐
-                │   ORCHESTRATOR      │  ← LangChain / Claude
-                │   (Agent Router)    │
-                └──┬───────┬──────┬───┘
-                   │       │      │
-          ┌────────▼─┐ ┌───▼───┐ ┌▼────────┐
-          │  PLANNER │ │  RAG  │ │  TOOLS  │
-          │  Agent   │ │Engine │ │Executor │
-          └────────┬─┘ └───┬───┘ └┬────────┘
-                   │       │      │
-                ┌──▼───────▼──────▼──┐
-                │   VECTOR DB / MEM  │
-                └────────────────────┘
-
----
-
-<div align="center">
-
-![footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=0:020510,50:0a0520,100:020510&section=footer)
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=nuvazic-pixel.nuvazic-pixel&left_color=020510&right_color=00e5ff&left_text=VISITORS)
-
-</div>
+Romanian: native · German: B2 · English: C1
