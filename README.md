@@ -1,39 +1,71 @@
-# Mark-Sebastian Bistrean-Chirodea
-### Data Analytics · Infrastructure Reporting · Spatial Data
+![Mark-Sebastian Bistrean-Chirodea — Data Analytics, Infrastructure Reporting and Spatial Data](assets/analytics-banner.svg)
 
-Based in Landsberg am Lech, Germany. Seeking a junior Data Analyst, Infrastructure Reporting or Data Quality role around Augsburg/Munich, or a suitable remote/hybrid opportunity.
+# From field documentation to analytical reporting
 
-I combine over eight years in telecommunications infrastructure, surveying, construction billing and technical documentation with Data Analytics training at WBS CODING SCHOOL (completed April 2026).
+I'm **Mark-Sebastian**, a Data Analytics graduate with **8+ years of professional experience in telecommunications infrastructure, surveying, construction billing and technical documentation**.
 
-My practical background includes checking field records, reconciling quantities, maintaining GIS/CAD documentation and preparing information for project and billing teams. My analytics portfolio focuses on making data understandable, checking its quality and explaining what a result can—and cannot—support.
+I bring practical knowledge of how field information becomes quantities, project records and billing inputs—and use Python, SQL and visualisation to explore data, check its quality and explain results.
 
-## Selected analytics projects
+**Open to:** Data Analyst · Infrastructure / Operations Reporting · Data Quality  
+**Location:** Landsberg am Lech, Germany · Augsburg / Munich · suitable hybrid or remote roles  
+**Connect:** [LinkedIn](https://www.linkedin.com/in/bistreanchirodeamark)
 
-| Project | Question and deliverable | Skills demonstrated |
-| --- | --- | --- |
-| [NetGrid — FTTH scenario dashboard](https://github.com/nuvazic-pixel/netgrid-intelligence) | Explore how take rate, build cost and revenue assumptions change an FTTH scenario; Streamlit dashboard with maps and scenario calculations. **Demonstration with simulated FTTH metrics.** | Python, pandas, SQLite, Plotly, infrastructure KPIs |
-| [Magist — Marketplace & delivery analysis](https://github.com/nuvazic-pixel/magist-ecommerce-sql-analysis) | Evaluate a marketplace's product mix and delivery performance for a technology retailer; SQL analysis and Tableau screenshots. | MySQL, joins, aggregation, date calculations, KPI definitions |
-| [GANS — Cities, weather & flights ETL](https://github.com/nuvazic-pixel/Gans_Cities_Final) | Collect city and API data and organize it into six related MySQL tables; documented notebook pipeline. **Requires API access and a local database.** | Python, requests, BeautifulSoup, pandas, SQLAlchemy, relational modelling |
-| [Eniac — Pricing & data quality notebooks](https://github.com/nuvazic-pixel/eniac-ecommerce-analysis) | Explore transaction quality, construct revenue/discount variables and prepare category and seasonal comparisons. **Source-data rerun and completed findings remain in progress.** | pandas, missing/duplicate checks, merges, feature engineering, Matplotlib |
+## What I bring to a team
 
-For a quick review: start with the business question in each README, open the linked source, then check the data and validation limitations. Course exercises and independent prototypes are labelled in their repositories.
+- **Infrastructure context:** FTTH rollout, subcontractor coordination, measurements and as-built documentation.
+- **A data-quality mindset:** checking records, reconciling quantities and tracing discrepancies between field and office information.
+- **Analytics training:** completed the WBS CODING SCHOOL Data Analytics programme in April 2026, covering Python, pandas, SQL, Tableau, APIs and ETL.
+- **Clear communication:** Romanian (native), German (B2) and English (C1).
 
-## Skills and learning
+## Selected work
 
-**Analytics training:** Python, pandas, SQL, Tableau, data collection with APIs, ETL, BigQuery and Looker Studio. Training also covered A/B testing and data visualisation.
+### 01 · NetGrid — FTTH Scenario Reporting
+**Python · pandas · SQLite · Streamlit · Plotly**
 
-**Professional tools:** Excel, SAP documentation workflows, QGIS, AutoCAD/BricsCAD, Trimble GPS and Pix4D.
+**Question:** How do take-rate assumptions affect subscribers and annual sales value when construction costs stay fixed?
 
-**Domain experience:** FTTH rollout, surveying, quantity measurement, construction billing, contractor coordination, progress documentation and quality checks.
+The project combines an FTTH dashboard with scenario calculations and municipal-style records. A reproducible example compares three take rates: 30%, 45% and 60%, producing 900, 1,350 and 1,800 subscribers for 3,000 homes.
 
-My projects practise the full path from a business question to data preparation, metric definitions, visualisation and a clear explanation of limitations. I distinguish training exposure from professional experience.
+**Demonstrates:** infrastructure KPI modelling, controlled scenario comparisons and communicating assumptions. The example uses synthetic inputs; municipal FTTH metrics are simulated.
 
-## Additional technical interests
+[Project & methodology](https://github.com/nuvazic-pixel/netgrid-intelligence) · [Executed example & results](https://github.com/nuvazic-pixel/netgrid-intelligence/blob/main/reports/take_rate_scenarios.md) · [Python script](https://github.com/nuvazic-pixel/netgrid-intelligence/blob/main/examples/scenario_report.py)
 
-I also explore AI orchestration and engineering prototypes, including [EAON](https://github.com/nuvazic-pixel/EAON) and [GenCAD AI](https://github.com/nuvazic-pixel/GenCAD-AI). These are independent development projects, separate from the analytics case studies above.
+### 02 · Magist — Marketplace & Delivery Analysis
+**MySQL · Tableau · Business analysis**
 
-## Contact
+**Question:** Is a marketplace's product mix and delivery performance a good fit for a technology retailer?
 
-[LinkedIn](https://www.linkedin.com/in/bistreanchirodeamark) · [GitHub repositories](https://github.com/nuvazic-pixel?tab=repositories)
+Coursework using relational joins, grouped aggregations and date calculations to examine orders, product categories and delivery timing. Includes SQL and Tableau screenshots, with explicit definitions for product share, revenue share and late deliveries.
 
-Romanian: native · German: B2 · English: C1
+**Demonstrates:** translating a business question into SQL, distinguishing orders from order lines, and checking KPI denominators. Source-data rerun remains pending.
+
+[Case study & visual evidence](https://github.com/nuvazic-pixel/magist-ecommerce-sql-analysis) · [SQL analysis](https://github.com/nuvazic-pixel/magist-ecommerce-sql-analysis/blob/main/explore_the_dataset%20(1).sql)
+
+### 03 · GANS — Cities, Weather & Flights ETL
+**Python · pandas · APIs · BeautifulSoup · MySQL**
+
+**Question:** How can information from web pages and multiple APIs be combined into a common relational database?
+
+Coursework pipeline for city information, weather forecasts and airport arrivals. Normalises records into six related tables, including a city–airport junction table.
+
+**Demonstrates:** HTTP/JSON data collection, transformation and relational modelling. Running the full pipeline requires API access and MySQL; the current notebook has no saved execution outputs.
+
+[Pipeline & data model](https://github.com/nuvazic-pixel/Gans_Cities_Final) · [Notebook](https://github.com/nuvazic-pixel/Gans_Cities_Final/blob/main/gans_cities_final.ipynb)
+
+## Tools in context
+
+| Context | Tools and experience |
+| --- | --- |
+| Analytics coursework & portfolio | Python, pandas, SQL/MySQL, Tableau, Matplotlib, requests, BeautifulSoup, ETL |
+| Additional course exposure | BigQuery, Looker Studio, A/B testing |
+| Professional infrastructure work | Excel, SAP documentation workflows, QGIS, AutoCAD/BricsCAD, Trimble GPS, Pix4D |
+
+## Current learning & independent projects
+
+[Eniac — Pricing & Data Quality](https://github.com/nuvazic-pixel/eniac-ecommerce-analysis): notebooks for missing-value and duplicate checks, joins, discount features and seasonal comparisons. Source-data execution and completed findings are still in progress.
+
+I also develop independent engineering and AI prototypes: [EAON](https://github.com/nuvazic-pixel/EAON) and [GenCAD AI](https://github.com/nuvazic-pixel/GenCAD-AI).
+
+---
+
+[LinkedIn](https://www.linkedin.com/in/bistreanchirodeamark) · [All repositories](https://github.com/nuvazic-pixel?tab=repositories) · [Project descriptions for applications — EN / DE](docs/cv-projects.md)
